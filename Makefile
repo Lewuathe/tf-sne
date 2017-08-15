@@ -1,0 +1,7 @@
+all:
+	docker build -t lewuathe/tf-sne .
+
+.PHONY: test clean
+
+run:
+	docker run -it -p 6006:6006 -v /Users/sasakikai/dev/tf-sne/data:/srv/tf-sne/data lewuathe/tf-sne ${OPTIONS}
