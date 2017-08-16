@@ -14,10 +14,6 @@ tf.flags.DEFINE_string(
 tf.flags.DEFINE_string(
     'metadata_file', None, 'Specify the metadata csv file'
 )
-#
-# tf.flags.DEFINE_string(
-#     "data_dir", 'data', 'Specify the directory including features and metadata'
-# )
 
 # tf.flags.DEFINE_integer(
 #     'num_data', None, 'Specify the number of samples from data'
