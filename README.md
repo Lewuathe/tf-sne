@@ -3,7 +3,7 @@ tf-sne [![Docker Pulls](https://img.shields.io/docker/pulls/lewuathe/tf-sne.svg)
 
 [t-SNE](https://lvdmaaten.github.io/tsne/) is a state of the art dimension reduction algorithm and 
 there are [several implementations](http://scikit-learn.org/stable/modules/generated/sklearn.manifold.TSNE.html) available.
-tf-sne is a light weight visualization tool by using Tensorflow, Tensorboard. tf-sne create a embedding matrix of given data sets and converts 
+tf-sne is a light weight visualization tool by using [Tensorflow](http://tensorflow.org/), [Tensorboard](https://www.tensorflow.org/get_started/embedding_viz). tf-sne create a embedding matrix of given data sets and converts 
 it into Tensorflow projection format.      
 
 ![tensorboard](tensorboard.gif)
@@ -30,7 +30,7 @@ $ make run \
     OPTIONS='--features_file features.csv --metadata_file metadata.csv'
 ```
 
-It create embedding matrix and launch Tensorboard on the model. Please looks at http://localhost:6006/#embeddings.
+It create embedding matrix and launch Tensorboard on the model. Please look at http://localhost:6006/#embeddings.
 
 # License
 
