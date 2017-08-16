@@ -30,6 +30,8 @@ $ make run \
     OPTIONS='--features_file features.csv --metadata_file metadata.csv'
 ```
 
+It create embedding matrix and launch Tensorboard on the model. Please looks at http://localhost:6006/#embeddings.
+
 # License
 
 [MIT License](https://opensource.org/licenses/MIT)
