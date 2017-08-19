@@ -1,0 +1,19 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/tf-sne
+    docker:
+      - image: circleci/python
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run:
+          name: Docker Login
+          command: docker login -u $DOCKER_USER -p $DOCKER_PASS
+      - run:
+          name: Build
+          command: docker build -t lewuathe/tf-sne .
+      - run:
+          name: Upload
+          command: docker push lewuathe/tf-sne
+
