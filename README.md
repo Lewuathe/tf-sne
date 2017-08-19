@@ -8,6 +8,10 @@ it into Tensorflow projection format.
 
 ![tensorboard](tensorboard.gif)
 
+# Prerequisites
+
+* Docker 17.06 or later
+
 # Build
 
 ```
@@ -28,6 +32,17 @@ You can see the example file in `data/` dire.
 $ make run \
     DATA_DIR=/path/to/data \
     OPTIONS='--features_file features.csv --metadata_file metadata.csv'
+```
+
+Or you can use pre-built docker image from Docker Hub.
+
+
+```
+$ docker run -it -p 6006:6006 \
+    -v /path/to/you-data-dir:/srv/tf-sne/data \
+    lewuathe/tf-sne \
+    --features_file features.csv \
+    --metadata_file metadata.csv
 ```
 
 It create embedding matrix and launch Tensorboard on the model. Please look at http://localhost:6006/#embeddings.
