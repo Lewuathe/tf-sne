@@ -1,4 +1,4 @@
-tf-sne [![Docker Pulls](https://img.shields.io/docker/pulls/lewuathe/tf-sne.svg)](https://hub.docker.com/r/lewuathe/tf-sne/)
+tf-sne [![CircleCI](https://circleci.com/gh/Lewuathe/tf-sne.svg?style=svg)](https://circleci.com/gh/Lewuathe/tf-sne) [![Docker Pulls](https://img.shields.io/docker/pulls/lewuathe/tf-sne.svg)](https://hub.docker.com/r/lewuathe/tf-sne/)
 ====
 
 [t-SNE](https://lvdmaaten.github.io/tsne/) is a state of the art dimension reduction algorithm and 
